@@ -31,6 +31,8 @@
             font-size: 16px;
             background: #fff;
         }
+
+        /* 共通チップ */
         .chip {
             display: inline-flex;
             align-items: center;
@@ -42,6 +44,20 @@
             cursor: pointer;
             background: #fff;
         }
+
+        /* チェックボックス用 */
+        .chip-check input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* ラジオボタン用 */
+        .chip-radio input[type="radio"] {
+            width: 16px;
+            height: 16px;
+            accent-color: #1a73e8;
+        }
+
         button {
             background: #1a73e8;
             color: #fff;
@@ -72,11 +88,11 @@
     <input type="text" name="position">
 
     <label>1-3. 御担当領域</label>
-    <label class="chip"><input type="checkbox" name="domain[]" value="教育">教育</label>
-    <label class="chip"><input type="checkbox" name="domain[]" value="地域支援">地域支援</label>
-    <label class="chip"><input type="checkbox" name="domain[]" value="システム">システム</label>
-    <label class="chip"><input type="checkbox" name="domain[]" value="企画">企画</label>
-    <label class="chip"><input type="checkbox" name="domain[]" value="その他">その他</label>
+    <label class="chip chip-check"><input type="checkbox" name="domain[]" value="教育">教育</label>
+    <label class="chip chip-check"><input type="checkbox" name="domain[]" value="地域支援">地域支援</label>
+    <label class="chip chip-check"><input type="checkbox" name="domain[]" value="システム">システム</label>
+    <label class="chip chip-check"><input type="checkbox" name="domain[]" value="企画">企画</label>
+    <label class="chip chip-check"><input type="checkbox" name="domain[]" value="その他">その他</label>
 
     <!-- 2. 現場ニーズ -->
     <label>2-1. 現在の業務で感じている課題</label>
@@ -90,20 +106,20 @@
 
     <!-- 3. 教材に求める内容 -->
     <label>3-1. 読みやすい形式</label>
-    <label class="chip"><input type="radio" name="format" value="図解中心">図解中心</label>
-    <label class="chip"><input type="radio" name="format" value="ストーリー形式">ストーリー形式</label>
-    <label class="chip"><input type="radio" name="format" value="ワーク形式">ワーク形式</label>
-    <label class="chip"><input type="radio" name="format" value="事例中心">事例中心</label>
-    <label class="chip"><input type="radio" name="format" value="その他">その他</label>
+    <label class="chip chip-radio"><input type="radio" name="format" value="図解中心">図解中心</label>
+    <label class="chip chip-radio"><input type="radio" name="format" value="ストーリー形式">ストーリー形式</label>
+    <label class="chip chip-radio"><input type="radio" name="format" value="ワーク形式">ワーク形式</label>
+    <label class="chip chip-radio"><input type="radio" name="format" value="事例中心">事例中心</label>
+    <label class="chip chip-radio"><input type="radio" name="format" value="その他">その他</label>
 
     <label>3-2. 教材に入れたい内容</label>
     <textarea name="material_contents"></textarea>
 
     <!-- 4. 検定について -->
     <label>4-1. 合格後の記念に望ましいもの</label>
-    <label class="chip"><input type="checkbox" name="exam_reward[]" value="合格証">合格証</label>
-    <label class="chip"><input type="checkbox" name="exam_reward[]" value="認定バッジ">認定バッジ</label>
-    <label class="chip"><input type="checkbox" name="exam_reward[]" value="その他">その他</label>
+    <label class="chip chip-check"><input type="checkbox" name="exam_reward[]" value="合格証">合格証</label>
+    <label class="chip chip-check"><input type="checkbox" name="exam_reward[]" value="認定バッジ">認定バッジ</label>
+    <label class="chip chip-check"><input type="checkbox" name="exam_reward[]" value="その他">その他</label>
 
     <!-- 5. 三社連携 -->
     <label>5-1. 三社連携で期待する点</label>
